@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" xmlns:android1="http://schemas.android.com/apk/res/android">
+
+	<ScrollView android1:layout_height="wrap_content"
+		android1:id="@+id/scrollView1" android1:layout_width="fill_parent">
+
+	</ScrollView>
+	<LinearLayout android1:id="@+id/linearLayout1"
+		android1:layout_width="fill_parent" android1:orientation="vertical"
+		android1:layout_height="fill_parent">
+		<TextView android1:id="@+id/firstname_view" android1:gravity="left"
+			android1:layout_marginLeft="20dip" android1:layout_height="wrap_content"
+			android1:text="@string/firstname" android1:layout_marginRight="20dip"
+			android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:layout_width="wrap_content"></TextView>
+		<EditText android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:capitalize="none" android1:gravity="fill_horizontal"
+			android1:text="EditText" android1:layout_marginLeft="20dip"
+			android1:layout_height="35dip" android1:scrollHorizontally="true"
+			android1:autoText="false" android1:layout_marginRight="20dip"
+			android1:id="@+id/firstname_edit" android1:layout_width="fill_parent"></EditText>
+		<TextView android1:id="@+id/lastname_view" android1:gravity="left"
+			android1:layout_marginLeft="20dip" android1:layout_height="wrap_content"
+			android1:text="@string/lastname" android1:layout_marginRight="20dip"
+			android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:layout_width="wrap_content"></TextView>
+		<EditText android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:capitalize="none" android1:text="EditText"
+			android1:layout_marginLeft="20dip" android1:layout_height="35dip"
+			android1:scrollHorizontally="true" android1:autoText="false"
+			android1:layout_marginRight="20dip" android1:id="@+id/lastname_edit"
+			android1:layout_width="fill_parent"></EditText>
+		<TextView android1:id="@+id/username_view" android1:gravity="left"
+			android1:layout_marginLeft="20dip" android1:layout_height="wrap_content"
+			android1:text="@string/username" android1:layout_marginRight="20dip"
+			android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:layout_width="wrap_content"></TextView>
+		<EditText android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:capitalize="none" android1:gravity="fill_horizontal"
+			android1:text="EditText" android1:layout_marginLeft="20dip"
+			android1:layout_height="35dip" android1:scrollHorizontally="true"
+			android1:autoText="false" android1:layout_marginRight="20dip"
+			android1:id="@+id/username_edit" android1:layout_width="fill_parent"></EditText>
+		<TextView android1:id="@+id/password_view" android1:gravity="left"
+			android1:layout_marginLeft="20dip" android1:layout_height="wrap_content"
+			android1:text="@string/password" android1:layout_marginRight="20dip"
+			android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:layout_width="wrap_content"></TextView>
+		<EditText android1:password="true"
+			android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:capitalize="none" android1:gravity="fill_horizontal"
+			android1:text="EditText" android1:layout_marginLeft="20dip"
+			android1:layout_height="35dip" android1:scrollHorizontally="true"
+			android1:autoText="false" android1:layout_marginRight="20dip"
+			android1:id="@+id/password_edit" android1:layout_width="fill_parent"></EditText>
+		<TextView android1:id="@+id/password__confirmation_view"
+			android1:gravity="left" android1:layout_marginLeft="20dip"
+			android1:layout_height="wrap_content" android1:text="@string/password_confirmation"
+			android1:layout_marginRight="20dip" android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:layout_width="wrap_content"></TextView>
+		<EditText android1:password="true"
+			android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:capitalize="none" android1:gravity="fill_horizontal"
+			android1:text="EditText" android1:layout_marginLeft="20dip"
+			android1:layout_height="35dip" android1:scrollHorizontally="true"
+			android1:autoText="false" android1:layout_marginRight="20dip"
+			android1:id="@+id/password_confirmation_edit" android1:layout_width="fill_parent"></EditText>
+		<TextView android1:id="@+id/birthdate_view" android1:gravity="left"
+			android1:layout_marginLeft="20dip" android1:layout_height="wrap_content"
+			android1:text="@string/birthdate" android1:layout_marginRight="20dip"
+			android1:textAppearance="?android:attr/textAppearanceSmall"
+			android1:layout_width="wrap_content"></TextView>
+		<DatePicker android1:layout_gravity="center_horizontal"
+			android1:layout_height="wrap_content" android1:id="@+id/birthdate"
+			android1:layout_width="wrap_content">
+			<DatePicker android1:id="@+id/birthdate"></DatePicker>
+		</DatePicker>
+		<Button android1:layout_gravity="center_horizontal"
+			android1:text="Sign Up" android1:onClick="SignUpHandler" android1:id="@+id/sign_up"
+			android1:clickable="true" android1:layout_height="wrap_content"
+			android1:layout_width="wrap_content"></Button>
+
+	</LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" xmlns:android1="http://schemas.android.com/apk/res/android">
+		
+  <TextView android:id="@+id/firstname_view"
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+    android:text="@string/firstname" android:gravity="left"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+     />
+  <EditText android1:text="EditText" android1:textAppearance="?android:attr/textAppearanceSmall" android1:capitalize="none" android1:gravity="fill_horizontal" android1:layout_marginLeft="20dip" android1:layout_height="35dip" android1:scrollHorizontally="true" android1:autoText="false" android1:layout_marginRight="20dip" android1:id="@+id/firstname_edit" android1:layout_width="fill_parent"></EditText>
+
+  <TextView android:id="@+id/lastname_view"
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+    android:text="@string/lastname" android:gravity="left"
+    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+  <EditText android:id="@+id/lastname_edit"
+    android:layout_height="35dip" android:layout_width="fill_parent"
+    android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+    android:scrollHorizontally="true" android:autoText="false"
+    android:capitalize="none" android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+	<TextView android:id="@+id/username_view"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+		android:text="@string/username" android:gravity="left"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<EditText android:id="@+id/username_edit"
+		android:layout_height="35dip" android:layout_width="fill_parent"
+		android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+		android:scrollHorizontally="true" android:autoText="false"
+		android:capitalize="none" android:gravity="fill_horizontal"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<TextView android:id="@+id/password_view"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+		android:text="@string/password" android:gravity="left"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<EditText android:id="@+id/password_edit"
+		android:layout_height="35dip" android:layout_width="fill_parent"
+		android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+		android:scrollHorizontally="true" android:autoText="false"
+		android:capitalize="none" android:gravity="fill_horizontal"
+		android:password="true" android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+  <TextView android:id="@+id/password__confirmation_view"
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+    android:text="@string/password_confirmation" android:gravity="left"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+  <EditText android:id="@+id/password_confirmation_edit"
+    android:layout_height="35dip" android:layout_width="fill_parent"
+    android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+    android:scrollHorizontally="true" android:autoText="false"
+    android:capitalize="none" android:gravity="fill_horizontal"
+    android:password="true" android:textAppearance="?android:attr/textAppearanceSmall" />
+  <DatePicker android1:id="@+id/datePicker2" android1:layout_width="wrap_content" android1:layout_height="wrap_content"></DatePicker>
+
+  <ScrollView android1:layout_height="wrap_content" android1:id="@+id/scrollView1" android1:layout_width="fill_parent">
+      <LinearLayout android1:id="@+id/linearLayout1" android1:layout_width="fill_parent" android1:layout_height="fill_parent">
+  <Button android1:text="Sign In" android1:id="@+id/button1"
+    android1:layout_height="wrap_content" android1:layout_width="wrap_content"
+    android1:clickable="true" android1:layout_gravity="center_horizontal"
+    android1:onClick="SignInHandler"></Button>
+  <DatePicker android1:layout_height="wrap_content" android1:id="@+id/datePicker1" android1:layout_width="wrap_content"></DatePicker>
+      
+      </LinearLayout>
+  </ScrollView>
+
+
+</LinearLayout>

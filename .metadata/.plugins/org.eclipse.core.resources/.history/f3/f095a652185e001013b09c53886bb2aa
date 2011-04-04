@@ -1,0 +1,63 @@
+package com.gobenow.home;
+
+import org.apache.http.HttpResponse;
+
+import android.app.Activity;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
+public class GoBeNow extends Activity {
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		SignUp();
+
+	}
+
+	public void SignUp() {
+		SharedPreferences settings = getPreferences(MODE_PRIVATE);
+		String username = settings.getString("username", "");
+		String password = settings.getString("password", "");
+		setContentView(R.layout.sign_in);
+		
+		if (username != "" && password != "") {
+			HttpResponse response = REST.authenticate(username, password);
+
+			if (response.getStatusLine().getStatusCode() != 200)
+				setContentView(R.layout.sign_in);
+			else
+				setContentView(R.layout.main);
+		} else
+			setContentView(R.layout.sign_in);
+	}
+
+	public void SignInHandler(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.button1:
+			EditText usernameEdit = (EditText) findViewById(R.id.username_edit);
+			EditText passwordEdit = (EditText) findViewById(R.id.password_edit);
+			String username = usernameEdit.getText().toString();
+			String password = passwordEdit.getText().toString();
+			
+			HttpResponse response = REST.authenticate(username, password);
+
+			// If successful, save it
+			if (response.getStatusLine().getStatusCode() == 200) {
+				SharedPreferences settings = getPreferences(MODE_PRIVATE);
+				Editor editor = settings.edit();
+				editor.putString("username", username);
+				editor.putString("password", password);
+				editor.commit();
+				setContentView(R.layout.main);
+			}
+				
+			break;
+		}
+	}
+}

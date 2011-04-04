@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GoBeNow!</string>
+    <string name="app_name">GoBeNow</string>
+    <string name="username">Email</string>
+    <string name="password">Password:</string>
+    <string name="firstname">First Name:</string>
+    <string name="lastname">Last Name:</string>
+    <string name="password_confirmation">Re-enter Password:</string>
+    <string name="birthdate">Birthdate:</string>
+    <string-array name="gender"></string-array>
+</resources>
