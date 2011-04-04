@@ -3267,3 +3267,90 @@ java.lang.IllegalStateException: ScrollView can host only one direct child
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2011-04-03 11:14:56.065
 !MESSAGE AndroidManifest: Ignoring unknown 'it' XML element
+!SESSION 2011-04-03 19:29:03.454 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jdt.debug 4 120 2011-04-03 21:43:39.872
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2011-04-03 21:43:39.872
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.UnsupportedOperationException
+	at org.eclipse.jdi.internal.MirrorImpl.defaultReplyErrorHandler(MirrorImpl.java:255)
+	at org.eclipse.jdi.internal.ReferenceTypeImpl.classObject(ReferenceTypeImpl.java:752)
+	at org.eclipse.jdt.internal.debug.core.model.JDIReferenceType.getClassObject(JDIReferenceType.java:109)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.AbstractRuntimeContext.classForName(AbstractRuntimeContext.java:117)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.AbstractRuntimeContext.classForName(AbstractRuntimeContext.java:150)
+	at org.eclipse.jdt.internal.debug.eval.ast.instructions.Instruction.getType(Instruction.java:204)
+	at org.eclipse.jdt.internal.debug.eval.ast.instructions.PushType.execute(PushType.java:29)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.Interpreter.execute(Interpreter.java:66)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$1$EvaluationRunnable.run(ASTEvaluationEngine.java:483)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.runEvaluation(JDIThread.java:681)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$EvalRunnable.run(ASTEvaluationEngine.java:520)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:2756)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2011-04-03 21:43:43.845
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2011-04-03 21:43:43.846
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.UnsupportedOperationException
+	at org.eclipse.jdi.internal.MirrorImpl.defaultReplyErrorHandler(MirrorImpl.java:255)
+	at org.eclipse.jdi.internal.ReferenceTypeImpl.classObject(ReferenceTypeImpl.java:752)
+	at org.eclipse.jdt.internal.debug.core.model.JDIReferenceType.getClassObject(JDIReferenceType.java:109)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.AbstractRuntimeContext.classForName(AbstractRuntimeContext.java:117)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.AbstractRuntimeContext.classForName(AbstractRuntimeContext.java:150)
+	at org.eclipse.jdt.internal.debug.eval.ast.instructions.Instruction.getType(Instruction.java:204)
+	at org.eclipse.jdt.internal.debug.eval.ast.instructions.PushType.execute(PushType.java:29)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.Interpreter.execute(Interpreter.java:66)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$1$EvaluationRunnable.run(ASTEvaluationEngine.java:483)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.runEvaluation(JDIThread.java:681)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$EvalRunnable.run(ASTEvaluationEngine.java:520)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:2756)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2011-04-03 21:43:46.274
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2011-04-03 21:43:46.274
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.UnsupportedOperationException
+	at org.eclipse.jdi.internal.MirrorImpl.defaultReplyErrorHandler(MirrorImpl.java:255)
+	at org.eclipse.jdi.internal.ReferenceTypeImpl.classObject(ReferenceTypeImpl.java:752)
+	at org.eclipse.jdt.internal.debug.core.model.JDIReferenceType.getClassObject(JDIReferenceType.java:109)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.AbstractRuntimeContext.classForName(AbstractRuntimeContext.java:117)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.AbstractRuntimeContext.classForName(AbstractRuntimeContext.java:150)
+	at org.eclipse.jdt.internal.debug.eval.ast.instructions.Instruction.getType(Instruction.java:204)
+	at org.eclipse.jdt.internal.debug.eval.ast.instructions.PushType.execute(PushType.java:29)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.Interpreter.execute(Interpreter.java:66)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$1$EvaluationRunnable.run(ASTEvaluationEngine.java:483)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.runEvaluation(JDIThread.java:681)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$EvalRunnable.run(ASTEvaluationEngine.java:520)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:2756)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2011-04-03 21:47:08.807
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2011-04-03 21:47:08.807
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.UnsupportedOperationException
+	at org.eclipse.jdi.internal.MirrorImpl.defaultReplyErrorHandler(MirrorImpl.java:255)
+	at org.eclipse.jdi.internal.ReferenceTypeImpl.classObject(ReferenceTypeImpl.java:752)
+	at org.eclipse.jdt.internal.debug.core.model.JDIReferenceType.getClassObject(JDIReferenceType.java:109)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.AbstractRuntimeContext.classForName(AbstractRuntimeContext.java:117)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.AbstractRuntimeContext.classForName(AbstractRuntimeContext.java:150)
+	at org.eclipse.jdt.internal.debug.eval.ast.instructions.Instruction.getType(Instruction.java:204)
+	at org.eclipse.jdt.internal.debug.eval.ast.instructions.PushType.execute(PushType.java:29)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.Interpreter.execute(Interpreter.java:66)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$1$EvaluationRunnable.run(ASTEvaluationEngine.java:483)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.runEvaluation(JDIThread.java:681)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$EvalRunnable.run(ASTEvaluationEngine.java:520)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:2756)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
