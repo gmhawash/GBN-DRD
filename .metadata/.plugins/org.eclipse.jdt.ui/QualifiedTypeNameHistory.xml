@@ -32,4 +32,5 @@
 <fullyQualifiedTypeName name="android.R.layout"/>
 <fullyQualifiedTypeName name="android.widget.Spinner"/>
 <fullyQualifiedTypeName name="com.gobenow.home.R.id"/>
+<fullyQualifiedTypeName name="src.com.google.zxing.Result"/>
 </qualifiedTypeNameHistroy>

@@ -13,4 +13,7 @@
 		<item>Female</item>
 	</string-array>
 	<string name="gender">Gender:</string>
+	<string name="result_succeeded">Success </string>
+	<string name="result_failed">Failed to find QR-Code</string>
+	<string name="result_failed_why">"The user gave up and pressed Back"</string>
 </resources>

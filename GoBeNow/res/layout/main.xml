@@ -10,6 +10,6 @@
 	<Button android:text="Button2" android:id="@+id/button2"
 		android:layout_width="100dip" android:layout_height="wrap_content"
 		android:layout_toRightOf="@+id/button1" android:layout_alignTop="@+id/button1"
-		android:layout_alignBottom="@+id/button1"></Button>
+		android:layout_alignBottom="@+id/button1" android:background="@drawable/custom_button"></Button>
 </RelativeLayout>
 

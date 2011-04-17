@@ -12,9 +12,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -29,7 +35,27 @@ public class GoBeNow extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		SignUp();
+		setContentView(R.layout.main);
+
+		if (IsNetworkAvailable())
+			SignUp();
+		else
+			Toast.makeText(this, "Sorry, but I cannot find a network in sight",
+			    Toast.LENGTH_LONG).show();
+	}
+
+	public boolean IsNetworkAvailable() {
+		try {
+			ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+			NetworkInfo info = connectivityManager.getActiveNetworkInfo();
+			if (info == null)
+				return false;
+
+			return info.isAvailable();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 
 	public void SignUp() {
@@ -42,11 +68,36 @@ public class GoBeNow extends Activity {
 
 			if (response.getStatusLine().getStatusCode() != 200)
 				setContentView(R.layout.sign_in);
-			else
+			else {
 				setContentView(R.layout.main);
+				Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+				intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+				startActivityForResult(intent, 0);
+			}
 		} else
 			setContentView(R.layout.sign_in);
 	}
+	
+  @Override
+  public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+    if (requestCode == 0) {
+      if (resultCode == RESULT_OK) {
+        String contents = intent.getStringExtra("SCAN_RESULT");
+        String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
+        showDialog(R.string.result_succeeded, "Format: " + format + "\nContents: " + contents);
+      } else if (resultCode == RESULT_CANCELED) {
+        showDialog(R.string.result_failed, getString(R.string.result_failed_why));
+      }
+    }
+  }
+
+  private void showDialog(int title, String message) {
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    builder.setTitle(title);
+    builder.setMessage(message);
+    builder.setPositiveButton("OK", null);
+    builder.show();
+  }
 
 	private String getValue(int id) {
 		EditText field = (EditText) findViewById(id);
@@ -94,7 +145,7 @@ public class GoBeNow extends Activity {
 
 		if (response.getStatusLine().getStatusCode() == 200)
 			return false;
-		else{
+		else {
 			HttpEntity entity = response.getEntity();
 			if (entity != null) {
 				try {
@@ -111,11 +162,11 @@ public class GoBeNow extends Activity {
 					result = sb.toString();
 
 					instream.close();
-					
+
 					JSONObject json = new JSONObject(result);
 					json = json.getJSONObject("flash");
 					result = json.getString("error");
-					
+
 					Toast.makeText(this, result, Toast.LENGTH_LONG).show();
 
 				} catch (IllegalStateException e) {
@@ -125,14 +176,13 @@ public class GoBeNow extends Activity {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (JSONException e) {
-	        // TODO Auto-generated catch block
-	        e.printStackTrace();
-        }
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}
 		return true;
 	}
-	
 
 	public void SignUpHandler(View v) {
 		switch (v.getId()) {
@@ -156,13 +206,14 @@ public class GoBeNow extends Activity {
 			hash.put("user[gender]", gender);
 
 			HttpResponse response = REST.sign_up(hash);
-			if(!ErrorsExist(response)) {
-				Toast.makeText(this, "An activation email has been sent to your email account.", Toast.LENGTH_LONG).show();
+			if (!ErrorsExist(response)) {
+				Toast.makeText(this,
+				    "An activation email has been sent to your email account.",
+				    Toast.LENGTH_LONG).show();
 				setContentView(R.layout.sign_in);
 			}
-			
+
 			break;
 		}
 	}
-
 }

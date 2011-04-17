@@ -1,0 +1,179 @@
+package com.gobenow.home;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.net.ConnectivityManager;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+public class GoBeNow extends Activity {
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+//		if(IsNetworkAvailable())
+			SignUp();
+//		else
+			Toast.makeText(this, "Cannot find a network in sight", Toast.LENGTH_LONG).show();
+	}
+
+	public boolean IsNetworkAvailable()
+	{
+		ConnectivityManager connectivityManager =  (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		return connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();		
+	}
+	
+	public void SignUp() {
+		SharedPreferences settings = getPreferences(MODE_PRIVATE);
+		String username = settings.getString("username", "");
+		String password = settings.getString("password", "");
+
+		if (username != "" && password != "") {
+			HttpResponse response = REST.authenticate(username, password);
+
+			if (response.getStatusLine().getStatusCode() != 200)
+				setContentView(R.layout.sign_in);
+			else
+				setContentView(R.layout.main);
+		} else
+			setContentView(R.layout.sign_in);
+	}
+
+	private String getValue(int id) {
+		EditText field = (EditText) findViewById(id);
+		if (field != null) {
+			return field.getText().toString();
+		}
+		return "";
+	}
+
+	public void SignInHandler(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.sign_in:
+			EditText usernameEdit = (EditText) findViewById(R.id.username_edit);
+			EditText passwordEdit = (EditText) findViewById(R.id.password_edit);
+			String username = usernameEdit.getText().toString();
+			String password = passwordEdit.getText().toString();
+
+			HttpResponse response = REST.authenticate(username, password);
+
+			// If successful, save it
+			if (response.getStatusLine().getStatusCode() == 200) {
+				SharedPreferences settings = getPreferences(MODE_PRIVATE);
+				Editor editor = settings.edit();
+				editor.putString("username", username);
+				editor.putString("password", password);
+				editor.commit();
+				setContentView(R.layout.main);
+			}
+			break;
+
+		case R.id.sign_up:
+			setContentView(R.layout.sign_up);
+			Spinner spinner = (Spinner) findViewById(R.id.gender);
+			ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+			    this, R.array.gender, android.R.layout.simple_spinner_dropdown_item);
+			spinner.setAdapter(adapter);
+			break;
+		}
+	}
+
+	public boolean ErrorsExist(HttpResponse response) {
+
+		String result = null;
+
+		if (response.getStatusLine().getStatusCode() == 200)
+			return false;
+		else {
+			HttpEntity entity = response.getEntity();
+			if (entity != null) {
+				try {
+					InputStream instream = entity.getContent();
+
+					BufferedReader reader = new BufferedReader(new InputStreamReader(
+					    instream));
+					StringBuilder sb = new StringBuilder();
+
+					String line = null;
+					while ((line = reader.readLine()) != null)
+						sb.append(line + "\n");
+
+					result = sb.toString();
+
+					instream.close();
+
+					JSONObject json = new JSONObject(result);
+					json = json.getJSONObject("flash");
+					result = json.getString("error");
+
+					Toast.makeText(this, result, Toast.LENGTH_LONG).show();
+
+				} catch (IllegalStateException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+		return true;
+	}
+
+	public void SignUpHandler(View v) {
+		switch (v.getId()) {
+		case R.id.sign_up:
+			Spinner spinner = (Spinner) findViewById(R.id.gender);
+			String gender = spinner.getSelectedItem().toString();
+
+			DatePicker datepicker = (DatePicker) findViewById(R.id.birthdate);
+			String birthdate = String.format("%s-%s-%s", datepicker.getYear(),
+			    datepicker.getMonth() + 1, datepicker.getDayOfMonth());
+
+			HashMap<String, String> hash = new HashMap<String, String>();
+
+			hash.put("user[email]", getValue(R.id.username_edit));
+			hash.put("user[password]", getValue(R.id.password_edit));
+			hash.put("user[password_confirmation]",
+			    getValue(R.id.password_confirmation_edit));
+			hash.put("user[first_name]", getValue(R.id.firstname_edit));
+			hash.put("user[last_name]", getValue(R.id.lastname_edit));
+			hash.put("user[birth_date]", birthdate);
+			hash.put("user[gender]", gender);
+
+			HttpResponse response = REST.sign_up(hash);
+			if (!ErrorsExist(response)) {
+				Toast.makeText(this,
+				    "An activation email has been sent to your email account.",
+				    Toast.LENGTH_LONG).show();
+				setContentView(R.layout.sign_in);
+			}
+
+			break;
+		}
+	}
+}

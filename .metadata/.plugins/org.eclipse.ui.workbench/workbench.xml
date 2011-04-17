@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="24" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
-<window height="851" maximized="true" width="1263" x="315" y="36">
+<window height="1080" maximized="true" width="1328" x="362" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -21,6 +21,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ant.ui.internal.editor.AntEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -46,25 +47,33 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="REST.java" partName="REST.java" path="D:/src/android/GoBeNow/src/com/gobenow/home/REST.java" title="REST.java" tooltip="GoBeNow/src/com/gobenow/home/REST.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoBeNow/src/com/gobenow/home/REST.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1503" selectionTopPixel="238"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GoBeNow.java" partName="GoBeNow.java" path="D:/src/android/GoBeNow/src/com/gobenow/home/GoBeNow.java" title="GoBeNow.java" tooltip="GoBeNow/src/com/gobenow/home/GoBeNow.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoBeNow/src/com/gobenow/home/GoBeNow.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="647" selectionTopPixel="255"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="sign_in.xml" partName="sign_in.xml" path="D:/src/android/GoBeNow/res/layout/sign_in.xml" title="sign_in.xml" tooltip="GoBeNow/res/layout/sign_in.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoBeNow/res/layout/sign_in.xml"/>
+<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="custom_button.xml" partName="custom_button.xml" path="D:/src/android/GoBeNow/res/drawable/custom_button.xml" title="custom_button.xml" tooltip="GoBeNow/res/drawable/custom_button.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoBeNow/res/drawable/custom_button.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="colors.xml" partName="colors.xml" path="D:/src/android/GoBeNow/res/values/colors.xml" title="colors.xml" tooltip="GoBeNow/res/values/colors.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoBeNow/res/values/colors.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="colors.xml" partName="colors.xml" path="D:/src/zxing-1.6/androidtest/res/values/colors.xml" title="colors.xml" tooltip="ZXingTestActivity/res/values/colors.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ZXingTestActivity/res/values/colors.xml"/>
 </editor>
 <editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" partName="main.xml" path="D:/src/android/GoBeNow/res/layout/main.xml" title="main.xml" tooltip="GoBeNow/res/layout/main.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoBeNow/res/layout/main.xml"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="sign_up.xml" partName="sign_up.xml" path="D:/src/android/GoBeNow/res/layout/sign_up.xml" title="sign_up.xml" tooltip="GoBeNow/res/layout/sign_up.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoBeNow/res/layout/sign_up.xml"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GoBeNow.java" partName="GoBeNow.java" path="D:/src/android/GoBeNow/src/com/gobenow/home/GoBeNow.java" title="GoBeNow.java" tooltip="GoBeNow/src/com/gobenow/home/GoBeNow.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoBeNow/src/com/gobenow/home/GoBeNow.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4890" selectionTopPixel="1848"/>
-</editor>
 </editors>
 <views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
@@ -73,6 +82,22 @@
 </viewState>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.resourceField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -87,59 +112,8 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
-<viewState/>
-</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
-</view>
-<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
-</view>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.resourceField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-</expanded>
-<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
-</viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
-<viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
-<sorter groupBy="CATEGORY_QUERY">
-<sorter>
-<sort0 sortDirection="1" sortKey="PRIORITY"/>
-<sort1 sortDirection="1" sortKey="RANK"/>
-<sort2 sortDirection="1" sortKey="DATE_CREATED"/>
-<sort3 sortDirection="1" sortKey="NONE"/>
-<sort4 sortDirection="1" sortKey="NONE"/>
-<sort5 sortDirection="1" sortKey="NONE"/>
-<sort6 sortDirection="1" sortKey="NONE"/>
-<sort7 sortDirection="1" sortKey="NONE"/>
-</sorter>
-</sorter>
-<filteredTreeFindHistory/>
-</viewState>
 </view>
 <view id="org.eclipse.help.ui.HelpView" partName="Help">
 <viewState pageId="context-help-page"/>
@@ -215,8 +189,6 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.help.ui.HelpView"/>
 <fastViewBars/>
@@ -244,7 +216,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.33090615" ratioLeft="409" ratioRight="827" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.15683815" ratioLeft="250" ratioRight="1344" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.6296296" ratioLeft="612" ratioRight="360" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -265,22 +237,18 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@5aa6343d" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.mylyn.tasks.ui.views.tasks" appearance="2" expanded="2">
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@5aa6343d" ratio="0.7" ratioLeft="560" ratioRight="240" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.49896908" ratioLeft="242" ratioRight="243" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5aa6343d">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -329,11 +297,8 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
-<view id="org.eclipse.debug.ui.VariableView"/>
-<view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
-<view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.help.ui.HelpView"/>
 <fastViewBars/>
 <layout>
@@ -346,7 +311,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="org.eclipse.ui.internal.ViewStack@17f724d4">
+<info folder="true" part="stickyFolderRight" ratio="0.83870965" ratioLeft="1144" ratioRight="220" relationship="2" relative="org.eclipse.ui.internal.ViewStack@17f724d4">
 <folder activePageID="org.eclipse.help.ui.HelpView" appearance="2" expanded="2">
 <page content="org.eclipse.help.ui.HelpView" label="Help"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
@@ -375,7 +340,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@103aaf48" ratio="0.4997293" ratioLeft="923" ratioRight="924" relationship="2" relative="org.eclipse.ui.internal.ViewStack@78e2fe2b">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@103aaf48" ratio="0.8342603" ratioLeft="750" ratioRight="149" relationship="2" relative="org.eclipse.ui.internal.ViewStack@78e2fe2b">
 <folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -383,8 +348,8 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.4546851" ratioLeft="296" ratioRight="355" relationship="4" relative="org.eclipse.ui.internal.ViewStack@17f724d4"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.31422505" ratioLeft="148" ratioRight="323" relationship="4" relative="org.eclipse.ui.internal.ViewStack@17f724d4"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7090272" ratioLeft="809" ratioRight="332" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
@@ -394,25 +359,20 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.7135605" ratioLeft="984" ratioRight="395" relationship="2" relative="org.eclipse.ui.internal.ViewStack@17f724d4">
-<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView" ratio="0.4997293" ratioLeft="923" ratioRight="924" relationship="2" relative="org.eclipse.ui.internal.ViewStack@17f724d4">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
-<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -423,158 +383,92 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GoBeNow/src/com/gobenow/home/GoBeNow.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=AuthenticatorActivity/D:\/bin\/android-sdk\/platforms\/android-7\/android.jar&lt;android.text(StaticLayout.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GoBeNow/src/com/gobenow/home/REST.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/ZXingTestActivity/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/ZXingTestActivity/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/GoBeNow/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ZXingTestActivity/src/com/google/zxing/client/androidtest/BenchmarkItem.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PhotoCaptureExample/src/makemachine/android/examples/PhotoCaptureExample.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/GoBeNow/res/layout/sign_in.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/GoBeNow/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/GoBeNow/res/drawable/custom_button.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/ZXingTestActivity/res/values/colors.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/ApiDemos/res/values/colors.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/GoBeNow/res/values/colors.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/ZXingTestActivity/res/values/colors.xml"/>
 </editors>
+<item historyLabel="strings.xml" index="1"/>
 <item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3014" y="0"/>
+<position info="not_deleted" x="1591" y="0"/>
 </item>
+<item historyLabel="ZXingTestActivity Manifest" index="2"/>
+<item historyLabel="GoBeNow Manifest" index="3"/>
+<item historyLabel="ZXingTestActivity Manifest" index="2"/>
 <item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3062" y="0"/>
+<position info="not_deleted" x="1591" y="0"/>
 </item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3014" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3120" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3090" y="0"/>
-</item>
-<item historyLabel="StaticLayout.class" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="REST.java" index="2">
-<position info="not_deleted" x="1608" y="0"/>
+<item historyLabel="BenchmarkItem.java" index="4">
+<position info="not_deleted" x="2150" y="0"/>
 </item>
 <item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="4624" y="0"/>
+<position info="not_deleted" x="1591" y="0"/>
 </item>
-<item historyLabel="REST.java" index="2">
-<position info="not_deleted" x="1503" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="4709" y="0"/>
+<item historyLabel="PhotoCaptureExample.java" index="5">
+<position info="not_deleted" x="882" y="0"/>
 </item>
 <item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="2695" y="0"/>
+<position info="not_deleted" x="1591" y="0"/>
 </item>
+<item historyLabel="sign_in.xml" index="6"/>
 <item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="2720" y="0"/>
+<position info="not_deleted" x="1591" y="0"/>
 </item>
+<item historyLabel="main.xml" index="7"/>
 <item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="2800" y="0"/>
+<position info="not_deleted" x="898" y="0"/>
 </item>
+<item historyLabel="GoBeNow Manifest" index="3"/>
 <item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="2845" y="0"/>
+<position info="not_deleted" x="1592" y="0"/>
 </item>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="colors.xml" index="9"/>
+<item historyLabel="colors.xml" index="10"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="colors.xml" index="10"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="colors.xml" index="12"/>
+<item historyLabel="colors.xml" index="11"/>
 <item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3172" y="0"/>
+<position info="not_deleted" x="1592" y="0"/>
 </item>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="main.xml" index="7"/>
 <item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3202" y="0"/>
+<position info="not_deleted" x="2198" y="0"/>
 </item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3753" y="15"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3439" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="4624" y="0"/>
-</item>
-<item historyLabel="REST.java" index="2">
-<position info="not_deleted" x="1503" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="4709" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3172" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3202" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3753" y="15"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3224" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="4709" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3172" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="4709" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3172" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3364" y="5"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3363" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3230" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="4709" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="4331" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3278" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3319" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3628" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3704" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3330" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3278" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3319" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3363" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3278" y="0"/>
-</item>
-<item historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3319" y="0"/>
-</item>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="main.xml" index="7"/>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="main.xml" index="7"/>
+<item historyLabel="colors.xml" index="12"/>
+<item historyLabel="colors.xml" index="11"/>
+<item historyLabel="custom_button.xml" index="8"/>
+<item historyLabel="colors.xml" index="11"/>
 <item active="true" historyLabel="GoBeNow.java" index="0">
-<position info="not_deleted" x="3364" y="0"/>
+<position info="not_deleted" x="2198" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -593,50 +487,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GoBeNow.java" tooltip="GoBeNow/src/com/gobenow/home/GoBeNow.java">
-<persistable path="/GoBeNow/src/com/gobenow/home/GoBeNow.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="GoBeNow/res/layout/main.xml">
+<persistable path="/GoBeNow/res/layout/main.xml"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="StaticLayout.class" tooltip="android.text.StaticLayout">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=AuthenticatorActivity/D:\/bin\/android-sdk\/platforms\/android-7\/android.jar&lt;android.text(StaticLayout.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="colors.xml" tooltip="ZXingTestActivity/res/values/colors.xml">
+<persistable path="/ZXingTestActivity/res/values/colors.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="colors.xml" tooltip="GoBeNow/res/values/colors.xml">
+<persistable path="/GoBeNow/res/values/colors.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="colors.xml" tooltip="ApiDemos/res/values/colors.xml">
+<persistable path="/ApiDemos/res/values/colors.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="custom_button.xml" tooltip="GoBeNow/res/drawable/custom_button.xml">
+<persistable path="/GoBeNow/res/drawable/custom_button.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="GoBeNow/AndroidManifest.xml">
 <persistable path="/GoBeNow/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="View.class" tooltip="android.view.View">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=GoBeNow/D:\/bin\/android-sdk\/platforms\/android-7\/android.jar&lt;android.view(View.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="sign_up.xml" tooltip="GoBeNow/res/layout/sign_up.xml">
-<persistable path="/GoBeNow/res/layout/sign_up.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="GoBeNow/gen/com/gobenow/home/R.java">
-<persistable path="/GoBeNow/gen/com/gobenow/home/R.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="ZXingTestActivity/AndroidManifest.xml">
+<persistable path="/ZXingTestActivity/AndroidManifest.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" tooltip="GoBeNow/res/values/strings.xml">
 <persistable path="/GoBeNow/res/values/strings.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="GoBeNow/res/layout/main.xml">
-<persistable path="/GoBeNow/res/layout/main.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" tooltip="ZXingTestActivity/res/values/strings.xml">
+<persistable path="/ZXingTestActivity/res/values/strings.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="sign_in.xml" tooltip="GoBeNow/res/layout/sign_in.xml">
-<persistable path="/GoBeNow/res/layout/sign_in.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="ZXingTestActivity/gen/com/google/zxing/client/androidtest/R.java">
+<persistable path="/ZXingTestActivity/gen/com/google/zxing/client/androidtest/R.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Object.class" tooltip="java.lang.Object">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=GoBeNow/D:\/bin\/android-sdk\/platforms\/android-7\/android.jar&lt;java.lang(Object.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="ids.xml" tooltip="ZXingTestActivity/res/values/ids.xml">
+<persistable path="/ZXingTestActivity/res/values/ids.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="REST.java" tooltip="GoBeNow/src/com/gobenow/home/REST.java">
-<persistable path="/GoBeNow/src/com/gobenow/home/REST.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="attrs.xml" tooltip="ZXingTestActivity/res/values/attrs.xml">
+<persistable path="/ZXingTestActivity/res/values/attrs.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetworkUtilities.java" tooltip="AuthenticatorActivity/src/com/example/android/samplesync/client/NetworkUtilities.java">
-<persistable path="/AuthenticatorActivity/src/com/example/android/samplesync/client/NetworkUtilities.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="GoBeNow/gen/com/gobenow/home/R.java">
+<persistable path="/GoBeNow/gen/com/gobenow/home/R.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="AuthenticatorActivity/AndroidManifest.xml">
-<persistable path="/AuthenticatorActivity/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CameraTestActivity.java" tooltip="ZXingTestActivity/src/com/google/zxing/client/androidtest/CameraTestActivity.java">
+<persistable path="/ZXingTestActivity/src/com/google/zxing/client/androidtest/CameraTestActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" tooltip="AuthenticatorActivity/res/values/strings.xml">
-<persistable path="/AuthenticatorActivity/res/values/strings.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AuthenticatorActivity.java" tooltip="AuthenticatorActivity/src/com/example/android/samplesync/authenticator/AuthenticatorActivity.java">
-<persistable path="/AuthenticatorActivity/src/com/example/android/samplesync/authenticator/AuthenticatorActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BenchmarkActivity.java" tooltip="ZXingTestActivity/src/com/google/zxing/client/androidtest/BenchmarkActivity.java">
+<persistable path="/ZXingTestActivity/src/com/google/zxing/client/androidtest/BenchmarkActivity.java"/>
 </file>
 </mruList>
 </workbench>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, GoBeNow!</string>
+	<string name="app_name">GoBeNow</string>
+	<string name="username">Email:</string>
+	<string name="password">Password:</string>
+	<string name="firstname">First Name:</string>
+	<string name="lastname">Last Name:</string>
+	<string name="password_confirmation">Re-enter Password:</string>
+	<string name="birthdate">Birth date:</string>
+	<string-array name="gender">
+		<item>Male</item>
+		<item>Female</item>
+	</string-array>
+	<string name="gender">Gender:</string>
+	<string name="result_succeeded">Success </string>
+	<string name="result_failed">Failed to find QR-Code</string>
+</resources>
